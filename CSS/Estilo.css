@@ -1,0 +1,67 @@
+* { margin: auto; padding: 0; font-family: arial; }
+
+/* ---- ---- ---- body: cuerpo de la página ---- ---- ---- */
+body { background-color: #deeebc; scroll-behavior: smooth;}
+audio { width: 30%; }
+#tablaPokemon audio { width: 80%; }
+
+
+
+/*cabecera*/
+header { background-color: blue; background: url(../IMG/Background.jpg); background-size: cover; background-attachment: fixed;}
+header h1 { text-align: center; color: navy; padding: 0.5em; font-size: 1.5em; }
+header h2 { text-align: center; color: #663366; padding: 0.5em; font-size: 1.2em; }
+
+/*Tablas*/
+article table { background-color: white; border-collapse: collapse; }
+th, td { border: solid 1px black; padding: 0;}
+table thead { background-color: rgb(44, 42, 42); color: white;}
+article tr:nth-child(even) { background-color: #C6C6C6; }
+
+/*navegador*/
+nav { background-color: #FFB726; min-height: 2em; text-align: center; position: sticky; position: -webkit-sticky; top: 0;}
+nav p { display: inline; }
+nav a:link, nav a:visited { text-decoration: none; color: black; margin: 0.3em; }
+nav a:hover, nav a:active { text-decoration: none; color: #9bf5ff; background-color: #543683; margin: 0.3em; }
+
+/*principal: article:*/
+section { width: 75%; background-color: #deeebc; float: left; }
+section h1 { text-align: center; padding: 0.5em; color: olive; font-size: 1.4em; }
+section h2 { text-align: center; padding: 0.5em; color: grey; font-size: 1.2em; }
+section h3 { text-align: left; padding: 0.3em 3em; color: #663366; font-size: 1em; }
+
+/*secciones: section:*/
+article { margin: 0.5em 1em; padding: 0.5em 1em; background-color: white; border: 3px double aqua;}
+article p { text-align: justify; }
+
+/*propaganda: aside:*/
+aside { width: 25%; float: right; }
+aside div { background-color: #82D9F2; margin: 20px; padding: 10px; border-style: groove; text-align: center; border-style: none; border-width: 1px; border-radius: 14px;}
+aside p { background-color: white; font-size: 0.9em; padding: 0.2em 1em; }
+table { width: 100%; }
+#tablaPokemon td { background-color: white; padding: 0; border-collapse: collapse; }
+#region { background-color: #94E7FF; font-size: 0.9em; padding: 0.2em 1em; }
+#tablaPokemon td:hover { background-color: #FEF273; }
+aside img { size: cover; }
+aside h3 { background-color: #82CBFB; }
+
+/*pie de página: footer:*/
+footer { clear: both; background-color: #ccffff; }
+footer h1 { text-align: center; font-size: 1.4em; color: navy; padding: 0.7em; }
+footer h2 { text-align: center; font-size: 1em; padding: 0.4em; }
+footer a { text-decoration: none; color: green; scroll-behavior: smooth;}
+
+@media screen and (max-width: 990px) {
+    aside { width: 40%; }
+    section { width: 60%; }
+}
+
+@media screen and (max-width: 680px) {
+    header { background-image: none; background-color: #FFB726; }
+    header img { background-color: white; }
+    nav { background-color: aqua; }
+    audio { width: 80%;}
+    aside { width: 100%; float: left; }
+    p img { width: 100%; }
+    section { width: 100%; }
+}
